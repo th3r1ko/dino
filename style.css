@@ -8,7 +8,7 @@
 #dino {
   width: 50px;
   height: 50px;
-  background-image: url(..img/dino.png);
+  background-image: url(img/dino.png);
   background-size: 50px 50px;
   position: relative;
   top: 145px;
@@ -17,7 +17,7 @@
 #cactus {
   width: 20px;
   height: 40px;
-  background-image: url(..img/cactus.png);
+  background-image: url(img/cactus.png);
   background-size: 20px 40px;
   position: relative;
   top: 105px;
@@ -35,21 +35,24 @@
 }
 
 .jump {
-  animation: jump 0.4s linear;
+  animation: jump 0.3s linear;
 }
 
 @keyframes jump {
   0% {
     top: 145px;
   }
-  30% {
-    top: 72.5px;
+  20% {
+    top: 96px;
   }
-  50% {
-    top: 36.25px;
+  40% {
+    top: 64px;
+  }
+  60% {
+    top: 64px;
   }
   80% {
-    top: 72.5px;
+    top: 96px;
   }
   100% {
     top: 145px;
