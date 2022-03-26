@@ -5,6 +5,10 @@ document.addEventListener("keydown", function (event) {
   jump();
 });
 
+document.addEventListener("touchstart", function (event) {
+  jump();
+});
+
 function jump() {
   if (dino.classList != "jump") {
     dino.classList.add("jump");
