@@ -2,7 +2,7 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 
 var fail = new Audio();
-fail.src = "audio/fail2.mp3";
+fail.src = "audio/fail.mp3";
 
 document.addEventListener("keydown", function (event) {
   jump();
@@ -27,7 +27,7 @@ let isAlive = setInterval(function () {
     window.getComputedStyle(cactus).getPropertyValue("left")
   );
 
-  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 145) {
+  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop == 145) {
     // alert("Game Over!");
     fail.play();
   }
